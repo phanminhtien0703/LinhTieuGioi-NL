@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linh Tiêu Giới</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-size: 0px;
+      }
+      img {
+        width: 100%;
+      }
+      body {
+        background-color: #f9f3e3;
+      }
+      .p1,
+      .p2,
+      .p3,
+      .p4 {
+        position: relative;
+      }
+      .top-bar {
+        position: absolute;
+        box-sizing: border-box;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: calc(30 / 1920 * 100vw);
+        padding-right: calc(30 / 1920 * 100vw);
+        z-index: 2;
+      }
+      .btn-row {
+        width: 100%;
+        max-width: calc(1500 / 1920 * 100vw);
+        display: flex;
+        justify-content: space-around;
+      }
+      .swiper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: calc(40 / 1920 * 100vw);
+        width: calc(1394 / 1920 * 100vw);
+        height: calc(784 / 1920 * 100vw);
+        overflow: hidden;
+      }
+      .swiper-slide {
+        width: calc(1520 / 1920 * 100vw);
+      }
+      .sw-row {
+        position: absolute;
+        top: calc(890 / 1920 * 100vw);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(20 / 1920 * 100vw);
+      }
+      .swiper-pagination {
+        position: relative;
+        width: calc(300 / 1920 * 100vw);
+      }
+      .dis {
+        opacity: 0.2;
+      }
+      .swiper-pagination > img {
+        width: calc(60 / 1920 * 100vw);
+      }
+      .swiper-button-prev-self {
+        position: absolute;
+        left: calc(60 / 1920 * 100vw);
+        top: calc(320 / 1920 * 100vw);
+        width: calc(140 / 1920 * 100vw);
+      }
+      .swiper-button-next-self {
+        position: absolute;
+        right: calc(60 / 1920 * 100vw);
+        top: calc(320 / 1920 * 100vw);
+        width: calc(140 / 1920 * 100vw);
+        transform: rotate(180deg);
+      }
+      .btn-bt-fb {
+        position: absolute;
+        width: calc(878 / 1920 * 100vw);
+        left: 50%;
+        top: calc(50 / 1920 * 100vw);
+        margin-left: calc(-438 / 1920 * 100vw);
+      }
+      footer {
+        background-color: #222222;
+        width: 100%;
+        height: calc(200 / 1920 * 100vw);
+        color: #cccccc;
+        font-size: calc(20 / 1920 * 100vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer > p {
+        font-size: calc(20 / 1920 * 100vw);
+      }
+      footer > p > a {
+        color: #cccccc;
+        font-size: calc(20 / 1920 * 100vw);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p1">
+      <img src="images/background/bg_01.jpg" alt="" />
+      <div class="top-bar">
+        <img
+          onclick="onSqClick()"
+          src="images/btn/btn_top_sq.png"
+          alt=""
+          class="btn-fb"
+          style="width: calc(420 / 1920 * 100vw)"
+        />
+        <img
+          onclick="onFbClick()"
+          src="images/btn/btn_top_fb.png"
+          alt=""
+          class="btn-fb"
+          style="width: calc(420 / 1920 * 100vw)"
+        />
+      </div>
+    </div>
+    <div class="p2">
+      <img src="images/background/bg_02.jpg" alt="" />
+      <div
+        style="
+          position: absolute;
+          top: calc(115 / 1920 * 100vw);
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        "
+      >
+        <div class="btn-row">
+          <a target="_blank" href="https://ynapk.gamessdk.com/game/418/202505/YN_version_OfflineAndroid_ltmt1_20250515134539.apk">
+            <img
+              src="images/btn/btn_google.png"
+              alt=""
+              class="btn-fb"
+              style="width: calc(540 / 1920 * 100vw)"
+            />
+          </a>
+          <a target="_blank" href="http://www.poopogame.com/shortLink/dwios/token/eyJ1cmwiOiJodHRwczpcL1wveW5hcGsuZ2FtZXNzZGsuY29tXC9nYW1lXC80MTlcLzIwMjUwNVwvWU5fMS4wLjJfT2ZmbGluZWlPU19sdG10Ml8yMDI1MDUxNTE2NTgzNC5pcGEiLCJidW5kbGVJZCI6ImNvbS5ncy52bi5pb3MudGllbmxpbmhnaW9pIiwidmVyc2lvbiI6IjEuMC4yIiwiYXBwTmFtZSI6IlRMRy5hcHAiLCJwYWNrTmFtZSI6IlRpXHUwMGVhbiBMaW5oIEdpXHUxZWRiaSJ9">
+            <img
+              src="images/btn/btn_ios.png"
+              alt=""
+              class="btn-fb"
+              style="width: calc(540 / 1920 * 100vw)"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p3">
+      <img src="images/background/bg_03.jpg" alt="" />
+      <div style="position: absolute; width: 100%; left: 0px; top: 0px">
+        <div class="swiper" id="p6_swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="images/home/sw_1.jpg"
+              loading="lazy"
+              style="object-fit: cover"
+            />
+            <img
+              class="swiper-slide"
+              src="images/home/sw_2.jpg"
+              loading="lazy"
+              style="object-fit: cover"
+            />
+            <img
+              class="swiper-slide"
+              src="images/home/sw_3.jpg"
+              loading="lazy"
+              style="object-fit: cover"
+            />
+            <img
+              class="swiper-slide"
+              src="images/home/sw_4.jpg"
+              loading="lazy"
+              style="object-fit: cover"
+            />
+            <img
+              class="swiper-slide"
+              src="images/home/sw_5.jpg"
+              loading="lazy"
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+        <img src="images/btn/left.png" class="swiper-button-prev-self" />
+        <img src="images/btn/left.png" class="swiper-button-next-self" />
+        <div class="sw-row">
+          <div class="swiper-pagination">
+            <img src="images/home/z1.png" alt="" />
+            <img src="images/home/z1.png" alt="" />
+            <img src="images/home/z1.png" alt="" />
+            <img src="images/home/z1.png" alt="" />
+            <img src="images/home/z1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- <p>
+                Bản quyền Mobile Intelligence Saigon | <a href="./privacy-policy.html">Privacy Policy</a>
+            </p> -->
+    </footer>
+    <script>
+      function isiOSFunc() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // 判断是否包含 'iPhone'、'iPad' 或 'iPod' 关键字
+        if (/iPhone|iPod|iPad/.test(userAgent) && !window.MSStream) {
+          return true;
+        }
+
+        return false;
+      }
+      function onSqClick() {
+        if (isiOSFunc()) {
+          window.open("https://www.facebook.com/linhtieugioi", "_blank");
+        } else {
+          window.open("https://www.facebook.com/linhtieugioi", "_blank");
+        }
+      }
+      function onFbClick() {
+        if (isiOSFunc()) {
+          window.open("https://www.facebook.com/groups/linhtieugioi", "_blank");
+        } else {
+          window.open("https://www.facebook.com/groups/linhtieugioi", "_blank");
+        }
+      }
+      const imgs = document.querySelectorAll(".swiper-pagination>img");
+      new Swiper("#p6_swiper", {
+        direction: "horizontal",
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-self",
+          prevEl: ".swiper-button-prev-self",
+        },
+        on: {
+          slideChange: (sw) => {
+            let index =
+              sw.activeIndex < 6
+                ? sw.activeIndex === 0
+                  ? 4
+                  : sw.activeIndex - 1
+                : 0;
+
+            for (let i = 0; i < imgs.length; i++) {
+              if (i === index) {
+                imgs[i].classList.remove("dis");
+              } else {
+                imgs[i].classList.add("dis");
+              }
+            }
+          },
+        },
+      });
+    </script>
+
+    <script>
+      if (window.location.search.includes("fbclid")) {
+        const url = new URL(window.location);
+        url.searchParams.delete("fbclid");
+        window.history.replaceState(
+          {},
+          document.title,
+          url.pathname + url.search
+        );
+      }
+    </script>
+  </body>
+</html>
