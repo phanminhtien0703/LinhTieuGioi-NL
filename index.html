@@ -117,6 +117,13 @@
       <img src="images/background/bg_01.jpg" alt="" />
       <div class="top-bar">
         <img
+          onclick="onGiftcodeClick()"
+          src="images/btn/btn_top_giftcode.png"
+          alt=""
+          class="btn-fb"
+          style="width: calc(320 / 1920 * 100vw)"
+        />
+        <img
           onclick="onSqClick()"
           src="images/btn/btn_top_sq.png"
           alt=""
@@ -234,6 +241,13 @@
           window.open("https://www.facebook.com/linhtieugioi", "_blank");
         } else {
           window.open("https://www.facebook.com/linhtieugioi", "_blank");
+        }
+      }
+      function onGiftcodeClick() {
+        if (isiOSFunc()) {
+          window.open("https://www.facebook.com/vivian.2k6", "_blank");
+        } else {
+          window.open("https://www.facebook.com/vivian.2k6", "_blank");
         }
       }
       function onFbClick() {
